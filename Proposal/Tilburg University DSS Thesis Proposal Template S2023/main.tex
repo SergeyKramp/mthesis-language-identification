@@ -21,7 +21,7 @@
 
 % !!! PLEASE CHANGE THESE VARIABLES TO MATCH YOUR INFORMATION !!!
 
-\def\thesistitle{Evaluating Obfuscation Attacks Using User Interaction}                      % title
+\def\thesistitle{Native Language Classification using BERT Embeddings}                      % title
 \def\subtitle{}             % subtitle
     % ^if there is no subtitle, replace by \def\subtitle{}  
 \def\yourname{Sergey Kramp}                                                                       % ^first and last name
@@ -55,13 +55,9 @@
 % --- start writing below:
 
 \section{Project Definition, Motivation \& Relevance} \label{sec:introduction}
-Machine Learning and Natural Language Processing (NLP) has been used to collect information about users based on stylometric information (writing style).
-This could be sensitive information such as age, gender, political affiliation or sexual orientation.
-A growing filed of research has been concerned with protecting online users and their privacy against data collection methods based on stylometry \citep{}, adversarial stylometry.
-A sub-task of adversarial stylometry is the obfuscation, which involves changing written text to make it harder to be classified by a stylometric classifier while preserving its original meaning.
-Emmery et al. \citep{emmer2019obfuscation} have proposed an obfuscation attack setup against a gender classifier. A part of that setup is a machine learning model that provides substitution suggestions for words that are likely to be informative for the classifier.
-In this work I will propose an external evaluation metric for the performance of this model that produces this substitutes. In particular by letting users interact with the suggestions and measuring the quality of the suggestions based on the user's feedback.
-The goal is to come up with an intuitive, model-agnostic metric that can be used to compare different 
+Native Language classification is the Natural Language Proceedings (NLP) task of determining an author's native language based on their writting in another language. For example, determining that an author is a native Italian speaker based on their writting in English. 
+In this work I will apply transformer models on Reddit data to try and classify the native language on authors based on their English posts on Reddit. 
+The scientific relevants of such a setup is two-fold. First, 
 \section{Literature Review}
 Provide a summary of what is known in the scientific literature about this problem. This summary should be based on at least five relevant \textbf{recent} sources and, if appropriate, some more classical sources. These recent sources need to satisfy the following requirements: 
 \begin{enumerate}
